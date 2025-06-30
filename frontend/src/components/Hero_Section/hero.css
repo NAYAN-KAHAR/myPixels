@@ -1,0 +1,86 @@
+
+.hero-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), /* Adjust the first color for the opacity effect */
+      rgba(0, 0, 0, 0.5) /* Adjust the second color for the opacity effect */
+    ),
+    url('https://images.pexels.com/photos/11678877/pexels-photo-11678877.jpeg?auto=compress&cs=tinysrgb&fit=crop&fp-y=0.5&h=500&sharp=20&w=1500');
+  height: 500px;
+  background-size: cover; 
+  background-position: center; 
+}
+
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.search > div > .search-inner-div > form > input {
+  width: 100%;  
+  max-width: 500px; 
+  padding: 10px; 
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+
+.search > div > .search-inner-div > form > input::placeholder {
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.form {
+  position: relative;
+}
+
+.form > button {
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form > button > img {
+  width: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.form > input {
+  padding-right: 50px; 
+}
+
+@media only screen and (max-width: 446px) {
+  .hero-section {
+    width: 100%;
+  }
+  
+.search > div > .search-inner-div > form > input {
+  width: 100%; 
+  padding: 10px 10px; 
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: left;
+
+}
+.search > div > .search-inner-div > form > input::placeholder {
+  font-size: 14px;
+  color: gray;
+}
+  
+}

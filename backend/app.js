@@ -12,7 +12,7 @@ import session from 'express-session';
 const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://fantastic-souffle-ce28e8.netlify.app/signin'
+  'https://fantastic-souffle-ce28e8.netlify.app'
 ];
 
 app.use(cors({
